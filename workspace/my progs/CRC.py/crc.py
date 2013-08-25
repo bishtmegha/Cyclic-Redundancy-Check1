@@ -3,8 +3,7 @@ BitString = raw_input()
 length = len(BitString)
 print "Enter the genrator bit string: ",
 GeneString = raw_input()
-for i in xrange(0, len(GeneString)):
-    BitString = BitString + '0'
+BitString = BitString + '0'*len(GeneString)
 print "Appended bitstring: "+ BitString
 quo = BitString
 for i in xrange(0,length):
